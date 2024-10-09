@@ -10,7 +10,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+        <nav class="navbar navbar-expand-lg bg-dark fs-5" data-bs-theme="dark">
             <div class="container-fluid">
               <a class="navbar-brand" href="#">
                 <img src="./img/duck.png" alt="">
@@ -21,16 +21,16 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2">
                   <li class="nav-item ">
-                    <a class="nav-link active text-white" aria-current="page" href="#">Catalogo Libri</a>
+                    <a class="nav-link active" aria-current="page" href="#">Catalogo Libri</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-white-50" href="#">Anagargica Utenti</a>
+                    <a class="nav-link" href="#">Anagargica Utenti</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-white-50" href="#">Storico Presenti</a>
+                    <a class="nav-link" href="#">Storico Presenti</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-white-50" href="#">Help</a>
+                    <a class="nav-link" href="#">Help</a>
                   </li>
                 </ul>
                
@@ -44,141 +44,96 @@
                 <div class="d-flex justify-content-between">
             
                     <h3>Catalogo Libri</h3>
-                
-                    <button type="button" class="btn btn-primary">Aggiungi Libro</button>
+                    <a class="btn btn-sm btn-primary fs-5" href="">Aggiungi Libro</a>
+                    
                 </div>
             </section>
             <section>
                 <table class="table table-striped align-middle fs-5">
                     <thead>
-                      <tr>
-                        <th class="w-50" scope="col">Titolo</th>
-                        <th class="d-none d-md-table-cell" scope="col">Data Prestito</th>
-                        <th scope="col">Stato</th>
-                        <th class="" scope="col">Azioni</th>
-                      </tr>
+                        <tr>
+                            <th class="w-50">Titolo</th>
+                            <th class="d-none d-md-table-cell">Data Prestito</th>
+                            <th>Stato</th>
+                            <th class="text-center">Azioni</th>
+                        </tr>
                     </thead>
                     <tbody>
-                      <tr>
-                        <td class="w-50" scope="row">I pilastri della terra</td>
-                        <td class="d-none d-md-table-cell">-</td>
-                        <td>
-                            <span class="badge text-bg-success">Disponibile</span>
-                        </td>
-                        <td class="d-flex">
-                            <div class="bg-trasparent border rounded p-2 me-2 fs-5 text-secondary">
-                                <i class="fa-solid fa-pen"></i>
-                            </div>
-                            <div class="bg-trasparent border rounded p-2  fs-5 text-secondary">
-                                <i class="fa-solid fa-trash"></i>
-                            </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="w-50" scope="row">I pilastri della terra</td>
-                        <td class="d-none d-md-table-cell">-</td>
-                        <td>
-                            <span class="badge text-bg-success">Disponibile</span>
-                        </td>
-                        <td class="d-flex">
-                            <div class="bg-trasparent border rounded p-2 me-2 fs-5 text-secondary">
-                                <i class="fa-solid fa-pen"></i>
-                            </div>
-                            <div class="bg-trasparent border rounded p-2  fs-5 text-secondary">
-                                <i class="fa-solid fa-trash"></i>
-                            </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="w-50" scope="row">Il signore degli anelli
-                        <td class="d-none d-md-table-cell">18/10/2023</td>
-                        <td>
-                            <span class="badge text-bg-warning text-white" >In prestito</span>
-                        </td>
-                        <td class="d-flex">
-                            <div class="bg-trasparent border rounded p-2 me-2 fs-5 text-secondary">
-                                <i class="fa-solid fa-pen"></i>
-                            </div>
-                            <div class="bg-trasparent border rounded p-2  fs-5 text-secondary">
-                                <i class="fa-solid fa-trash"></i>
-                            </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="w-50" scope="row">I pilastri della terra
-                        <td class="d-none d-md-table-cell">-</td>
-                        <td>
-                            <span class="badge text-bg-success">Disponibile</span>
-                        </td>
-                        <td class="d-flex">
-                            <div class="bg-trasparent border rounded p-2 me-2 fs-5 text-secondary">
-                                <i class="fa-solid fa-pen"></i>
-                            </div>
-                            <div class="bg-trasparent border rounded p-2  fs-5 text-secondary">
-                                <i class="fa-solid fa-trash"></i>
-                            </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="w-50" scope="row">I pilastri della terra
-                        <td class="d-none d-md-table-cell">-</td>
-                        <td>
-                            <span class="badge text-bg-success">Disponibile</span>
-                        </td>
-                        <td class="d-flex">
-                            <div class="bg-trasparent border rounded p-2 me-2 fs-5 text-secondary">
-                                <i class="fa-solid fa-pen"></i>
-                            </div>
-                            <div class="bg-trasparent border rounded p-2  fs-5 text-secondary">
-                                <i class="fa-solid fa-trash"></i>
-                            </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="w-50" scope="row">I pilastri della terra
-                        <td class="d-none d-md-table-cell">-</td>
-                        <td>
-                            <span class="badge text-bg-success">Disponibile</span>
-                        </td>
-                        <td class="d-flex">
-                            <div class="bg-trasparent border rounded p-2 me-2 fs-5 text-secondary">
-                                <i class="fa-solid fa-pen"></i>
-                            </div>
-                            <div class="bg-trasparent border rounded p-2  fs-5 text-secondary">
-                                <i class="fa-solid fa-trash"></i>
-                            </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="w-50" scope="row">I pilastri della terra
-                        <td class="d-none d-md-table-cell">-</td>
-                        <td>
-                            <span class="badge text-bg-success">Disponibile</span>
-                        </td>
-                        <td class="d-flex">
-                            <div class="bg-trasparent border rounded p-2 me-2 fs-5 text-secondary">
-                                <i class="fa-solid fa-pen"></i>
-                            </div>
-                            <div class="bg-trasparent border rounded p-2  fs-5 text-secondary">
-                                <i class="fa-solid fa-trash"></i>
-                            </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="w-50" scope="row">I pilastri della terra
-                        <td class="d-none d-md-table-cell">-</td>
-                        <td>
-                            <span class="badge text-bg-success">Disponibile</span>
-                        </td>
-                        <td class="d-flex">
-                            <div class="bg-trasparent border rounded p-2 me-2 fs-5 text-secondary">
-                                <i class="fa-solid fa-pen"></i>
-                            </div>
-                            <div class="bg-trasparent border rounded p-2  fs-5 text-secondary">
-                                <i class="fa-solid fa-trash"></i>
-                            </div>
-                        </td>
-                      </tr>
+                        <tr>
+                            <td>I pilastri della terra</td>
+                            <td class="d-none d-md-table-cell">-</td>
+                            <td>
+                                <span class="badge text-bg-success text-white" >Disponibile</span>
+                            </td>
+                            <td class="d-flex gap-1 justify-content-center">
+                                <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pen"></i></button>
+                                <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>   
+                                
+                                
+                                    
+                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>I promessi sposi</td>
+                            <td class="d-none d-md-table-cell">-</td>
+                            <td>
+                                <span class="badge text-bg-success text-white" >Disponibile</span>
+                            </td>
+                            <td class="d-flex gap-1 justify-content-center">
+                                <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pen"></i></button>
+                                <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>   
+                                
+                                
+                                    
+                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Il signore degli anelli</td>
+                            <td class="d-none d-md-table-cell">18/10/2023</td>
+                            <td>
+                                <span class="badge text-bg-warning text-white" >In prestito</span>
+                            </td>
+                            <td class="d-flex gap-1 justify-content-center">
+                                <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pen"></i></button>
+                                <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>   
+                                
+                                
+                                    
+                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Harry Potter e la pietra filosofale</td>
+                            <td class="d-none d-md-table-cell">-</td>
+                            <td>
+                                <span class="badge text-bg-success text-white" >Disponibile</span>
+                            </td>
+                            <td class="d-flex gap-1 justify-content-center">
+                                <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pen"></i></button>
+                                <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>   
+                                
+                                
+                                    
+                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Il codice Da Vinci</td>
+                            <td class="d-none d-md-table-cell">-</td>
+                            <td>
+                                <span class="badge text-bg-danger text-white" >Non disponibile</span>
+                            </td>
+                            <td class="d-flex gap-1 justify-content-center">
+                                <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pen"></i></button>
+                                <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>   
+                                
+                                
+                                    
+                                
+                            </td>
+                        </tr>
                   
                     </tbody>
                   </table>
