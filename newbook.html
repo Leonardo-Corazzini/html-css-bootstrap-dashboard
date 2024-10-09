@@ -11,7 +11,7 @@
     <header>
         <nav class="navbar navbar-expand-lg bg-dark fs-5" data-bs-theme="dark">
             <div class="container-fluid">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="./index.html">
                 <img src="./img/duck.png" alt="">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,40 +43,47 @@
              <h1 class="mb-5">Nuovo Libro</h1>
              <form class="row g-3">
                 <div class="col-md-6">
-                  <label for="author-name" class="form-label h5">Nome Autore</label>
-                  <input type="text" class="form-control" id="author-name" name="author-name" placeholder="Inserisci il nome dell'autore" required>
+                  <label for="author-name" class="form-label h4">Nome Autore</label>
+                  <input type="text" class="form-control fs-5" id="author-name" name="author-name" placeholder="Inserisci il nome dell'autore" required>
                 </div>
                 <div class="col-md-6">
-                  <label for="author-lastname" class="form-label h5">Cognome Autore</label>
-                  <input type="text" class="form-control" id="author-lastname" name="author-lastname" placeholder="Inserisci il cognome dell'autore" required>
+                  <label for="author-lastname" class="form-label h4">Cognome Autore</label>
+                  <input type="text" class="form-control fs-5" id="author-lastname" name="author-lastname" placeholder="Inserisci il cognome dell'autore" required>
                 </div>
                 <div class="col-12">
-                  <label for="book-name" class="form-label h5">Titolo</label>
-                  <input type="text" class="form-control" id="book-name" name="book-name" placeholder="Inserisci il titolo del libro" required>
-                  
+                  <label for="book-name" class="form-label h4">Titolo</label>
+                  <input type="text" class="form-control fs-5" id="book-name" name="book-name" placeholder="Inserisci il titolo del libro" aria-describedby="booknameHelpBlock" required>
+                  <div id="booknameHelpBlock" class="form-text fs-5">
+                    Titolo versione italiana
+                  </div>
                 </div>
-                <div class="col-md-4">
-                    <label for="book-type" class="form-label h5">Genere</label>
-                    <select id="book-type" class="form-select" name="book-type">
+                <div class="col-lg-4">
+                    <label for="book-type" class="form-label h4">Genere</label>
+                    <select id="book-type" class="form-select fs-5" name="book-type">
                       <option selected>Scegli il genere</option>
                       <option>Giallo</option>
                       <option>Horror</option>
+                      <option>Noir</option>
+                      <option>Fantasy</option>
+                      <option>Fantascienza</option>
+                      <option>Non specificato</option>
+
                     </select>
                   </div>
-                <div class="col-md-4">
-                    <label for="pubblication-year" class="form-label h5">Anno di Pubblicazione</label>
-                    <input type="number" class="form-control" id="pubblication-year" name="pubblication-year" placeholder="Inserisci l'anno" min="0" max="9999" required>
+                <div class="col-lg-4">
+                    <label for="pubblication-year" class="form-label h4">Anno di Pubblicazione</label>
+                    <input type="number" class="form-control fs-5" id="pubblication-year" name="pubblication-year" placeholder="Inserisci l'anno" min="0" max="9999" required>
                 </div>
-                <div class="col-md-4">
-                  <label for="isbn" class="form-label h5">ISBN#</label>
-                  <input type="text" class="form-control" id="isbn" name="isbn" placeholder="Inserisci il codice ISBN#" required>
+                <div class="col-lg-4">
+                  <label for="isbn" class="form-label h4">ISBN#</label>
+                  <input type="text" class="form-control fs-5" id="isbn" name="isbn" placeholder="Inserisci il codice ISBN#" required>
                 </div>
                 
                
                
                 <div class="col-12 border-top pt-5 mt-5">
-                    <label for="notes" class="form-label h5">Note</label>
-                    <textarea class="form-control" name="notes" id="notes" placeholder="Inserisci eventuali note sul libro" rows="5"></textarea>
+                    <label for="notes" class="form-label h4">Note</label>
+                    <textarea class="form-control fs-5" name="notes" id="notes" placeholder="Inserisci eventuali note sul libro" rows="5"></textarea>
                 </div>
                 <div class="col-12">
                     <div class="form-check">
@@ -85,7 +92,7 @@
                     </div>
                 </div>
                 <div class="col-12">
-                  <button type="submit" class="btn btn-primary">Aggiungi Libro</button>
+                  <button type="submit" class="btn btn-lg btn-primary">Aggiungi Libro</button>
                 </div>
              </form>
         </div>
